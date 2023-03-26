@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(../img/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.website {
+  margin: 30px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.website ul {
+  margin: 0;
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.website ul li {
+  list-style-type: none;
+}
+.website ul li.logo {
+  text-align: center;
+}
+.website ul li.logo img {
+  width: 330px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.website ul li.logo img:hover {
+  transform: scale(1.05);
+}
+.website ul li.title {
+  font-weight: bold;
+  text-align: center;
+}
+.website ul li.game-button {
+  margin: 15px 0;
+  cursor: pointer;
+  background: #1c2227;
+  border: solid 3px #0cb8b5;
+  padding: 8px 15px;
+  transition: transform 0.2s ease-in-out;
+}
+.website ul li.game-button span {
+  display: block;
+}
+.website ul li.game-button span:first-child {
+  font-size: 22px;
+  font-weight: bold;
+}
+.website ul li.game-button span:last-child {
+  font-size: 14px;
+}
+.website ul li.game-button:hover {
+  transform: scale(1.1);
+}
+.website ul li.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */

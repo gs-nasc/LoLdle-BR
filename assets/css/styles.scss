@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: #f1f1f1;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 18px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background-image: url(../img/wallpaper.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .3;
+    }
+}
+
+.website {
+    margin: 30px auto;
+    width: fit-content;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        width: fit-content;
+
+        li {
+            list-style-type: none;
+
+            &.logo {
+                text-align: center;
+
+                img {
+                    width: 330px;
+                    height: auto;
+                    cursor: pointer;
+
+                    transition: transform 0.2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            &.title {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            &.game-button {
+                margin: 15px 0;
+                cursor: pointer;
+
+                background: #1c2227;
+                border: solid 3px #0cb8b5;
+                padding: 8px 15px;
+
+                transition: transform 0.2s ease-in-out;
+
+                span {
+                    display: block;
+
+                    &:first-child {
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+
+                    &:last-child {
+                        font-size: 14px;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &.footer {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+}
